@@ -1,5 +1,4 @@
-function countLetters(strList) {
-  var str = strList.join();
+function countLetters(str) {
   var results = {};
   for(var char of str) {
     if (char.match(/[a-z]/i)) {
@@ -12,4 +11,4 @@ function countLetters(strList) {
   return results;
 }
 
-console.log(countLetters(process.argv.slice(2)));
+console.log(countLetters(process.argv.slice(2).join()));
